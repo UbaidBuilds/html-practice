@@ -10,7 +10,7 @@ It includes multiple pages and stylesheets:
 - `images/` – image assets
 
 ## Live Demo
-You can view the site here: [GitHub Pages Link](https://ubaidpatel.github.io/html-practice/)
+You can view the site here: [GitHub Pages Link](https://ubaidbuilds.github.io/html-practice/)
 
 ## Purpose
 This project is **not a portfolio**, but rather a practice project to:
