@@ -1,0 +1,142 @@
+/* Test Labs Specific Styles */
+
+
+header {
+    background-color: rgba(30, 30, 30, 0.9); 
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffcc00; 
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #ffcc00;
+}
+
+
+main {
+    padding: 160px 20px 50px; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+    color: #000; 
+}
+
+
+.test-lab {
+    max-width: 900px;
+    margin: 60px auto 0; 
+    padding: 40px 30px;
+    background: #1e1e1e; 
+    color: #fff; 
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.test-lab h2, .test-lab h3 {
+    color: #ffcc00; 
+    font-size: 1.8em;
+}
+
+.test-lab p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+
+.test-lab ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.test-lab li {
+    margin: 10px 0;
+}
+
+
+.test-lab-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px 0;
+    justify-content: center;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #ffcc00 transparent;
+}
+
+.test-lab-images::-webkit-scrollbar {
+    height: 8px;
+    background-color: transparent;
+}
+
+.test-lab-images::-webkit-scrollbar-thumb {
+    background-color: #ffcc00;
+    border-radius: 10px;
+}
+
+.test-lab-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-shrink: 0;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.test-lab-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Styling for Test Labs */
+@media (max-width: 768px) {
+    .test-lab-images {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .test-lab-images img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .test-lab {
+        padding: 20px;
+    }
+}
